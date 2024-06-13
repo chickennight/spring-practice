@@ -17,12 +17,12 @@ public class OrderControllerV3 {
     @GetMapping("/v3/request")
     public String request(String itemId) {
         orderService.orderItem(itemId);
-        return "OK";
+        return "ok";
     }
 
     @GetMapping("/v3/no-log")
     public String noLog() {
-        return "OK";
+        return "ok";
     }
 
 }

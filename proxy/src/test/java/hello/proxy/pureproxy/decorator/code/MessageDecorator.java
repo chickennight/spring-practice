@@ -15,11 +15,10 @@ public class MessageDecorator implements Component {
     public String operation() {
         log.info("MessageDecorator 실행");
 
-        // data -> *****data*****
+        //data -> *****data*****
         String result = component.operation();
         String decoResult = "*****" + result + "*****";
         log.info("MessageDecorator 꾸미기 적용 전={}, 적용 후={}", result, decoResult);
         return decoResult;
     }
-
 }
